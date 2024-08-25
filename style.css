@@ -1,0 +1,125 @@
+/* Resetting default margin, padding, and setting up a global font and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+/* Setting the background color for the body */
+body {
+    background: #222; /* Dark background for the entire page */
+}
+
+/* Styling the main weather card */
+.card {
+    width: 90%;
+    max-width: 470px; /* Max width of the card */
+    background: #333333; /* Dark grey background for the card */
+    color: #fff; /* White text color */
+    margin: 100px auto 0; /* Center the card with some top margin */
+    border-radius: 20px; /* Rounded corners */
+    padding: 40px 35px; /* Padding inside the card */
+    text-align: center; /* Center align the text */
+}
+
+/* Styling the search bar container */
+.search {
+    width: 100%; /* Full width search bar */
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Vertically center the content */
+    justify-content: space-between; /* Space between input and button */
+}
+
+/* Styling the search input */
+.search input {
+    border: 0; /* Removing default border */
+    outline: 0; /* Removing default outline */
+    background: #ebfffc; /* Light background color for input */
+    color: #555; /* Dark text color */
+    padding: 10px 25px; /* Padding inside the input */
+    height: 60px; /* Height of the input field */
+    border-radius: 30px; /* Rounded input corners */
+    flex: 1; /* Input takes up available space */
+    margin-right: 16px; /* Margin between input and button */
+    font-size: 15px; /* Font size of input text */
+}
+
+/* Styling the search button */
+.search button {
+    border: 0; /* Removing default border */
+    outline: 0; /* Removing default outline */
+    background: #ebfffc; /* Matching background with input */
+    border-radius: 50%; /* Circular button */
+    width: 60px; /* Width of the button */
+    height: 60px; /* Height of the button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Styling the search button image */
+.search button img {
+    width: 16px; /* Size of the search icon */
+}
+
+
+
+/* Styling the weather icon image */
+.weather-icon {
+    width: 170px; /* Width of the weather icon */
+    margin-top: 30px; /* Top margin to separate from other content */
+}
+
+/* Styling the main temperature text */
+.weather h1 {
+    font-size: 70px; /* Large font size for temperature */
+    font-weight: 400; /* Medium font weight */
+}
+
+/* Styling the city name text */
+.weather h2 {
+    font-size: 30px; /* Font size for the city name */
+    font-weight: 300; /* Regular font weight */
+    margin-top: -10px; /* Negative margin to reduce spacing */
+}
+
+/* Styling the details section (humidity and wind) */
+.details {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Vertically center the content */
+    justify-content: space-between; /* Space between humidity and wind */
+    padding: 0 20px; /* Horizontal padding inside details section */
+    margin-top: 50px; /* Top margin for separation */
+}
+
+/* Styling the first column of details */
+.col1 {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Vertically center the content */
+    text-align: left; /* Left-align the text */
+}
+
+/* Styling the images in the first column of details */
+.col1 img {
+    width: 40px; /* Size of the humidity icon */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Styling the humidity and wind values */
+.humidity, .wind {
+    font-size: 20px; /* Font size for values */
+    margin-top: -6px; /* Negative margin to adjust spacing */
+}
+
+/* Initially hiding the weather details */
+.weather {
+    display: none; /* Hidden by default */
+}
+
+/* Styling and hiding the error message */
+.error {
+    text-align: left; /* Left-align the error message */
+    margin-left: 10px; /* Left margin for spacing */
+    margin-top: 10px; /* Top margin for spacing */
+    font-size: 10px; /* Font size for the error message */
+    display: none; /* Hidden by default */
+}
